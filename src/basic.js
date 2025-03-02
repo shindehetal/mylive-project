@@ -85,7 +85,7 @@ const Basic = () => {
                                         onChange={obj => setAbout(obj.target.value)} value={about}></textarea>
                                 </div>
 
-                                <div class="text-center pb-2">
+                                <div class="text-center pb-3">
                                     <button class="btn btn-danger me-3" onClick={save}> Save & Contiue </button>
                                 </div>
 
