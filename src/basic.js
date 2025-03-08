@@ -1,6 +1,7 @@
 import LeftNav from "./navigation";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
+import swal from "sweetalert";
 
 const Basic = () => {
     let basicdata = useSelector(state => state.MyBasic);
@@ -23,7 +24,7 @@ const Basic = () => {
         };
         let mydata={type:"basic",info:userinfo};
         dispatch(mydata);
-        alert("saved");
+        swal("Save Success","saved","success");
     }
 
     return (

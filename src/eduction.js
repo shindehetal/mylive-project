@@ -1,6 +1,7 @@
 import LeftNav from "./navigation";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
+import swal from "sweetalert";
 
 const Education = () => {
     let edudata = useSelector(state => state.MyEducation);
@@ -21,7 +22,7 @@ const Education = () => {
         };
         let mydata={type:"education",info:userinfo};
         dispatch(mydata);
-        alert("saved");
+        swal("Save Success","saved","success");
     }
 
     return (
